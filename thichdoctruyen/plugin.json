@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "name": "Thích Đọc Truyện",
+    "author": "vBook",
+    "version": 3,
+    "source": "https://thichdoctruyen.com",
+    "regexp": "(www.)?thichdoctruyen.com/doc-truyen/[^/]+\\d+$",
+    "description": "Đọc truyện trên trang Thích Đọc Truyện",
+    "locale": "vi_VN",
+    "type": "novel",
+    "language": "javascript"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "page": "page.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}

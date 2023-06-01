@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "name": "Truyện CV",
+    "author": "vBook",
+    "version": 3,
+    "source": "https://truyencv.com",
+    "regexp": "(www.)?truyencv.com/[^/]+/?$",
+    "description": "Đọc truyện trên trang Truyện CV",
+    "locale": "vi_VN",
+    "language": "javascript"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
