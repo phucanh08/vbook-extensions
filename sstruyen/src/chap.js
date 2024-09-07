@@ -1,10 +1,18 @@
-function execute(url) {
-    url = url.replace("sstruyen.com", "sstruyen.vn");
-    let response = fetch(url);
+async function execute(url) {
+    let response = await fetch(url);
     if (response.ok) {
-        let doc = response.html();
-        doc.select("iframe,ins").remove();
-        return Response.success(doc.select("div.content.container1").html());
+        let html = await response.text()
+        console.log('html')
+        // Loại bỏ các thẻ iframe và ins
+        html = html.replace(/<iframe[^>]*>[\s\S]*?<\/iframe>/gi, '').replace(/<ins[^>]*>[\s\S]*?<\/ins>/gi, '');                    
+
+        // Trích xuất nội dung từ div có class "content container1"
+        let contentMatch = html.match(/<div[^>]*class="[^"]*content[^"]*container1[^"]*"[^>]*>([\s\S]*?)<\/div>/i);
+        if (contentMatch) {
+            return contentMatch[1].trim();
+        } else {
+            return "Không tìm thấy nội dung";
+        }
     }
 
     return null;
