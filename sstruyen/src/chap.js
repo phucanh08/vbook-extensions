@@ -8,10 +8,11 @@ async function execute(url) {
 
         // Trích xuất nội dung từ div có class "content container1"
         let contentMatch = html.match(/<div[^>]*class="[^"]*content[^"]*container1[^"]*"[^>]*>([\s\S]*?)<\/div>/i);
+        
         if (contentMatch) {
-            return contentMatch[1].trim();
+            return Response.success(contentMatch[1].trim());
         } else {
-            return "Không tìm thấy nội dung";
+            return Response.error("Không tìm thấy nội dung");
         }
     }
 
