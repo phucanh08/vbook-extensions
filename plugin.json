@@ -1,13 +1,18 @@
-[
-  {
-    "name": "SS Truyện",
-    "author": "anhlp",
-    "path": "https://raw.githubusercontent.com/phucanh08/vbook-extensions/master/sstruyen",
-    "version": 0,
-    "source": "https://sstruyen.vn",
-    "icon": "https://raw.githubusercontent.com/phucanh08/vbook-extensions/master/sstruyen/icon.png",
-    "description": "Đọc truyện trên trang SS Truyện",
-    "type": "novel",
-    "locale": "vi_VN"
-  }
-]
+{
+  "metadata": {
+    "author": "vBook"
+  },
+  "data": [
+    {
+      "name": "SS Truyện",
+      "author": "anhlp",
+      "path": "https://raw.githubusercontent.com/phucanh08/vbook-extensions/master/sstruyen",
+      "version": 0,
+      "source": "https://sstruyen.vn",
+      "icon": "https://raw.githubusercontent.com/phucanh08/vbook-extensions/master/sstruyen/icon.png",
+      "description": "Đọc truyện trên trang SS Truyện",
+      "type": "novel",
+      "locale": "vi_VN"
+    }
+  ]  
+}
