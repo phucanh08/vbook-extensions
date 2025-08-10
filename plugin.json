@@ -4,15 +4,16 @@
   },
   "data": [
     {
-      "name": "SS Truyện",
+      "name": "Bàn long",
+      "version": "v0.0.1",
       "author": "anhlp",
-      "path": "https://raw.githubusercontent.com/phucanh08/vbook-extensions/master/sstruyen",
-      "version": 0,
-      "source": "https://sstruyen.vn",
-      "icon": "https://raw.githubusercontent.com/phucanh08/vbook-extensions/master/sstruyen/icon.png",
-      "description": "Đọc truyện trên trang SS Truyện",
+      "locale": "vi_VN",
+      "license": "MIT",
+      "icon": "https://banlong.pro/uploads/demo/favicon-end.png",
+      "host": "https://banlong.vip",
+      "description": "Đọc truyện trên trang Bàn long",
       "type": "novel",
-      "locale": "vi_VN"
+      "nsfw": false
     }
   ]  
 }
